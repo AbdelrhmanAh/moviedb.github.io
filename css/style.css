@@ -1,0 +1,107 @@
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+}
+
+.close {
+    font-size: 30px;
+}
+
+input {
+    background-color: transparent !important;
+    border: 0px solid !important;
+    border-bottom: 1px solid #ffffff !important;
+    border-radius: 0% !important;
+    color: #ffffff !important;
+}
+
+nav {
+    top: 0;
+    left: -259.097px;
+    transition: 0.5s all ease-in;
+}
+
+.MovieOption {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.option {
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: capitalize;
+    position: relative;
+    bottom: -100%;
+    cursor: pointer;
+    transition: 0.3s all ease-in;
+    padding-top: 25px;
+    opacity: 0;
+}
+
+.social_media {
+    color: #ffffff;
+    padding-left: 2rem;
+}
+
+.social_media i {
+    transition: all 0.3s ease-in;
+}
+
+.social_media i:hover {
+    color: red;
+}
+
+.option:hover {
+    color: red;
+}
+
+i {
+    cursor: pointer;
+}
+
+.GoToContact {
+    padding-top: 25px;
+    transition: 0.3s all ease-in;
+    position: relative;
+    bottom: -100%;
+    opacity: 0;
+}
+
+.GoToContact a {
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: capitalize;
+    transition: 0.3s all ease-in;
+    text-decoration: none;
+}
+
+.GoToContact a:hover {
+    color: red;
+}
+
+.white_part {
+    background-color: #ffffff;
+    width: fit-content;
+}
+
+.layer {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: 1s all ease-in-out;
+    height: 100%;
+    width: 100%;
+    bottom: -100%;
+
+}
+
+.movie:hover .layer {
+    bottom: 0;
+}
+
+.submit {
+    width: fit-content;
+}
