@@ -23,11 +23,11 @@ $(document).ready(function () {
         for (let i = 0; i < AllMovies.length; i++) {
 
             movieLayer += `
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4 m-auto">
 
                 <div class="position-relative overflow-hidden movie">
 
-                    <img class="img-fluid movie_img" src="${img_url}${AllMovies[i].poster_path}" alt="">
+                    <img class="w-100 movie_img" src="${img_url}${AllMovies[i].poster_path}" alt="">
 
                         <div class="layer text-dark d-flex align-items-center text-center justify-content-center">
                             <div>

@@ -7,9 +7,6 @@ body {
     background-color: #000000;
 }
 
-.close {
-    font-size: 30px;
-}
 
 input {
     background-color: transparent !important;
@@ -21,10 +18,16 @@ input {
 
 nav {
     top: 0;
+    bottom: 0;
     left: -259.097px;
     transition: 0.5s all ease-in;
+    z-index: 9999999;
 }
 
+/* .img {
+    width: 10%;
+}
+ */
 .MovieOption {
     list-style-type: none;
     overflow: hidden;
