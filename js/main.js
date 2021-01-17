@@ -78,8 +78,8 @@ $(document).ready(function () {
 
     $(".RePassword").on("blur", function () {
         let rejex = /^[A-Z][\w?\d]{5,20}$/
-        check(rejex, this);
-        if (this.value == $(".Password").val()) {
+        
+        if (this.value == $(".Password").val() && this.value != "" && check(rejex, this)) {
             this.classList.add("is-valid");
             this.classList.remove("is-invalid");
         } else {
@@ -94,6 +94,7 @@ $(document).ready(function () {
         if (rejex.test(checker.value) == true) {
             checker.classList.add("is-valid");
             checker.classList.remove("is-invalid");
+            return true;
         }
         else {
             checker.classList.add("is-invalid");
@@ -114,23 +115,23 @@ $(document).ready(function () {
         if (leftOfMenu == "0px") {
 
             $("nav").css("left", `-${widthOfMenu}`);
-            $(".option").eq(0).animate({ bottom: "-100%", opacity: "0" }, 1200)
-            $(".option").eq(1).animate({ bottom: "-100%", opacity: "0" }, 1000)
-            $(".option").eq(2).animate({ bottom: "-100%", opacity: "0" }, 800)
-            $(".option").eq(3).animate({ bottom: "-100%", opacity: "0" }, 600)
-            $(".option").eq(4).animate({ bottom: "-100%", opacity: "0" }, 400)
-            $(".option").eq(5).animate({ bottom: "-100%", opacity: "0" }, 300)
-            $(".GoToContact").animate({ bottom: "-100%", opacity: "0" }, 200)
+            $(".option").eq(0).animate({ bottom: "-100%", opacity: "0" }, 1100)
+            $(".option").eq(1).animate({ bottom: "-100%", opacity: "0" }, 1050)
+            $(".option").eq(2).animate({ bottom: "-100%", opacity: "0" }, 1000)
+            $(".option").eq(3).animate({ bottom: "-100%", opacity: "0" }, 950)
+            $(".option").eq(4).animate({ bottom: "-100%", opacity: "0" }, 900)
+            $(".option").eq(5).animate({ bottom: "-100%", opacity: "0" }, 800)
+            $(".GoToContact").animate({ bottom: "-100%", opacity: "0" }, 850)
 
         } else {
             $("nav").css("left", `0px`);
             $(".option").eq(0).animate({ top: "0", opacity: "1" }, 800)
-            $(".option").eq(1).animate({ bottom: "0", opacity: "1" }, 1000)
-            $(".option").eq(2).animate({ bottom: "0", opacity: "1" }, 1200)
-            $(".option").eq(3).animate({ bottom: "0", opacity: "1" }, 1400)
-            $(".option").eq(4).animate({ bottom: "0", opacity: "1" }, 1600)
-            $(".option").eq(5).animate({ bottom: "0", opacity: "1" }, 1800)
-            $(".GoToContact").animate({ bottom: "0", opacity: "1" }, 1800)
+            $(".option").eq(1).animate({ bottom: "0", opacity: "1" }, 850)
+            $(".option").eq(2).animate({ bottom: "0", opacity: "1" }, 900)
+            $(".option").eq(3).animate({ bottom: "0", opacity: "1" }, 950)
+            $(".option").eq(4).animate({ bottom: "0", opacity: "1" }, 1000)
+            $(".option").eq(5).animate({ bottom: "0", opacity: "1" }, 1050)
+            $(".GoToContact").animate({ bottom: "0", opacity: "1" }, 1100)
         }
     })
 
